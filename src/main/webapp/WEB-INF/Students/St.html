@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;" charset="utf-8">
+    <title>Student Page </title>
+</head>
+<body>
+<table>
+    <tread>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>studentLastname</td>
+            <td>No</td>
+        </tr>
+    </tread>
+    foreach($result as $val){
+    echo "
+    <tr>
+        <td>".$val['studentId']."</td>
+        <td>".$val['studentName']."</td>
+        <td>".$val['studentLastname']."</td>
+        <td>".$val['studentNo']."</td>
+        <td>"
+    </tr>
+    ";
+    }
+</table>
+<br/>
+</body>
+</html>
